@@ -25,24 +25,24 @@
 
 <section class="main-content">
     <h1 id=""><center>Multi-level Temporal-channel Speaker Retrieval for Robust Zero-shot Voice Conversion</center></h1>
-    <!-- <center> Zhichao Wang<sup>1</sup>, Xinsheng Wang<sup>1</sup>, Lei Xie<sup>1</sup>, Qiao Tian<sup>2</sup>, Yuping Wang<sup>2</sup> </center>
+    <center> Zhichao Wang<sup>1</sup>, Liumeng Xue<sup>1</sup>, Qiuqiang Kong<sup>1</sup>, Lei Xie<sup>1</sup>, Qiao Tian<sup>2</sup>, Yuping Wang<sup>2</sup> </center>
     <center> <sup>1</sup> Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical University, Xi'an, China</center>
-    <center> <sup>2</sup> SAMi, ByteDance Inc., Shanghai, China</center> -->
+    <center> <sup>2</sup> SAMi, ByteDance Inc., Shanghai, China</center>
 
 <h2>Contents</h2>
 <ul>
   <li><a href="#abstract">Abstract</a></li>
   <li><a href="#system">System Description</a></li>
-  <li><a href="#ID">Demos -- In-domain Speaker</a></li>
-  <li><a href="#OOD">Demos -- Out-of-domain Speaker</a></li>
+  <li><a href="#ID">Demos -- In-dataset Speaker</a></li>
+  <li><a href="#OOD">Demos -- Out-of-dataset Speaker</a></li>
   <!-- <li><a href="#duration">Vary Duration</a></li> -->
   <li><a href="#CL">Demos -- Cross-lingual Speaker</a></li>
-  <li><a href="#AB">Demos -- Ablation</a></li>
-  <li><a href="#MTCR">Demos -- MTCR Speaker Moudule</a></li>
+  <!-- <li><a href="#AB">Demos -- Ablation</a></li>
+  <li><a href="#MTCR">Demos -- MTCR Speaker Moudule</a></li> -->
 </ul>
 
 <h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
-<p>Zero-shot voice conversion (VC) is a challenging task, aiming to convert speech produced by a source speaker to that of any speaker even unseen during training. However, existing methods are insufficient to meet this task's requirements in terms of speaker similarity for unseen target speakers, especially out-of-domain (OOD) speakers whose speech has different recording conditions from that of the training corpus. In this work, MTCR-VC is proposed to achieve robust zero-shot VC in both in-domain (ID) and OOD speakers. Specifically, we propose \textit{\textbf{m}ulti-level \textbf{t}emporal-\textbf{c}hannel \textbf{r}etrieval (MTCR)}, which takes advantage of the speaker-discriminative knowledge learned by a speaker verification (SV) model to hierarchically query speaker information in temporal and channel dimensions. In this way, our model can reduce redundant speaker-unrelated information and effectively extract fine-grained speaker representations from the speech of target speakers. To ensure the ability of disentanglement and generalization, a cycle-based training strategy with perceptual constraints is further introduced to guide the disentanglement process and mitigate the mismatch between training and inference. Experiments conducted on both ID and OOD unseen speakers demonstrate that our proposed MTCR-VC achieves new state-of-the-art performance for zero-shot VC in terms of speaker similarity.  </p>
+<p> Zero-shot voice conversion (VC) converts source speech into the voice of any desired speaker using only one recording of the speaker without requiring additional model updates. Typical methods use a speaker representation from a pre-trained speaker verification (SV) model or learn speaker representation during VC training to achieve zero-shot VC. However, existing speaker modeling methods overlook the variation of speaker information richness in temporal and frequency channel dimensions of speech. This insufficient speaker modeling hampers the ability of the VC model to accurately represent unseen speakers who are not in the training dataset. In this study, we present a robust zero-shot VC model with multi-level temporal-channel retrieval , referred to as MTCR-VC. Specifically, to flexibly adapt to the dynamic-variant speaker characteristic in the temporal and channel axis of the speech, we propose a novel fine-grained speaker modeling method, called temporal-channel retrieval (TCR), to find out when and where speaker information appears in speech. It retrieves variable-length speaker representation from both temporal and channel dimensions under the guidance of a pre-trained SV model. Besides, inspired by the hierarchical process of human speech production, the MTCR speaker module stacks several TCR blocks to extract speaker representations from multi-granularity levels. Furthermore, to achieve better speech disentanglement and reconstruction, we introduce a cycle-based training strategy to simulate zero-shot inference recurrently. We adopt perpetual constraints on three aspects, including content, style, and speaker, to drive this process. Experiments demonstrate that MTCR-VC is superior to the previous VC methods in modeling speaker timbre while maintaining good speech naturalness.  </p>
 <br><br>
 
 <center><img src='fig/model.png' width=800px></center>
@@ -64,7 +64,7 @@ Comparison Systems
 <li>MTCR-VC: our proposed system</li>
 </ul>
 </blockquote>
-<h2>3. Demos -- In-domain Speaker<a name="ID"></a></h2>
+<h2>3. Demos -- In-dataset Speaker<a name="ID"></a></h2>
 <table>
   <tbody>
     <tr>
@@ -134,7 +134,7 @@ Comparison Systems
 
 
 
-<h2>4. Demos -- Out-of-domain Speaker<a name="OOD"></a></h2>
+<h2>4. Demos -- Out-of-dataset Speaker<a name="OOD"></a></h2>
 <table>
   <tbody>
     <tr>
@@ -271,11 +271,11 @@ Comparison Systems
 
 <!-- <li><a href="#more">Demos -- Ablation</a></li> -->
 <!-- <li><a href="#more">Demos -- MTCR Speaker Moudule</a></li> -->
-
+<!-- 
 <h3>6. Demos -- Ablation<a name="AB"></a></h3>
 
 <!-- <h3>4.1. Demos -- Effectiveness of different style level<a name="mutiscale"></a></h2> -->
-<table>
+<!-- <table>
   <tbody>
 
     <tr>
@@ -294,7 +294,7 @@ Comparison Systems
     <td style="text-align: center; width: 150px;" rowspan=1><strong>FragmentVC<strong></td>
     <td style="text-align: center; width: 150px;" rowspan=1><strong>MTCR-VC (proposed)<strong></td>
   </tr> -->
-  <tr>
+  <!-- <tr>
     <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/3570_5694_000005_000004_6db.wav"></audio></td>
     <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0006_6db.wav"></audio></td>
     <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woMTCR/3570-bdl_arctic_a0016_24k_6db.wav"></audio></td>
@@ -337,19 +337,19 @@ Comparison Systems
 
 
 </tbody>
-</table>
+</table> -->
 
 
 <!-- <li><a href="#more">Demos -- Ablation</a></li> -->
 <!-- <li><a href="#more">Demos -- MTCR Speaker Moudule</a></li> -->
 
-<h3>6. Demos -- MTCR Speaker Moudule<a name="MTCR"></a></h3>
-
+<!-- <h3>6. Demos -- MTCR Speaker Moudule<a name="MTCR"></a></h3> -->
+<!-- 
 <blockquote>
   Speaker Representation
 <!-- <h3>4.1. Demos -- E
   ffectiveness of different style level<a name="mutiscale"></a></h2> -->
-<table>
+<!-- <table>
   <tbody>
 
     <tr>
@@ -359,14 +359,14 @@ Comparison Systems
     <td style="text-align: center; width: 150px;"><strong>w/o Block2<strong></td>
     <td style="text-align: center; width: 150px;"><strong>w/o Block3<strong></td>
     <td style="text-align: center; width: 150px;"><strong>MTCR-VC (proposed)<strong></td>
-  </tr>
+  </tr> -->
   <!-- <tr>
     <td style="text-align: center; width: 150px;" rowspan=1><strong>MediumVC<strong></td>
     <td style="text-align: center; width: 150px;" rowspan=1><strong>SRDVC<strong></td>
     <td style="text-align: center; width: 150px;" rowspan=1><strong>FragmentVC<strong></td>
     <td style="text-align: center; width: 150px;" rowspan=1><strong>MTCR-VC (proposed)<strong></td>
   </tr> -->
-  <tr>
+  <!-- <tr>
     <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/260_123286_000006_000002_6db.wav"></audio></td>
     <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0020_6db.wav"></audio></td>
     <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation//woBlock1/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
@@ -401,12 +401,12 @@ Comparison Systems
 
 
 </tbody>
-</table>
+</table> -->
 
-<blockquote>
-  Speaker Retrieval Process
+<!-- <blockquote>
+  Speaker Retrieval Process -->
 
-<table>
+<!-- <table>
   <tbody>
 
     <tr>
@@ -460,7 +460,7 @@ Comparison Systems
   <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/hifi6097-p225_011_24k_6db.wav"></audio></td>
 </tr>
 </tbody>
-</table>
+</table>  -->
 
       <footer class="site-footer">
         
