@@ -33,8 +33,8 @@
 <ul>
   <li><a href="#abstract">Abstract</a></li>
   <li><a href="#system">System Description</a></li>
+ <li><a href="#OOD">Demos -- Out-of-dataset Speaker</a></li>
   <li><a href="#ID">Demos -- In-dataset Speaker</a></li>
-  <li><a href="#OOD">Demos -- Out-of-dataset Speaker</a></li>
   <!-- <li><a href="#duration">Vary Duration</a></li> -->
   <li><a href="#CL">Demos -- Cross-lingual Speaker</a></li>
   <!-- <li><a href="#AB">Demos -- Ablation</a></li>
@@ -64,77 +64,10 @@ Comparison Systems
 <li>MTCR-VC: our proposed system</li>
 </ul>
 </blockquote>
-<h2>3. Demos -- In-dataset Speaker<a name="ID"></a></h2>
-<table>
-  <tbody>
-    <tr>
-        <td style="text-align: center; width: 150px;" rowspan=2><strong>Target Speaker<strong></td>
-      <td style="text-align: center; width: 150px;" rowspan=2><strong>Source Speech<strong></td>
-      <td style="text-align: center; width: 150px;" colspan=5><strong>Method<strong></td>
-    </tr>
-    <tr>
-      <td style="text-align: center; width: 150px;" rowspan=1><strong>MediumVC<strong></td>
-      <td style="text-align: center; width: 150px;" rowspan=1><strong>SRDVC<strong></td>
-      <td style="text-align: center; width: 150px;" rowspan=1><strong>FragmentVC<strong></td>
-      <td style="text-align: center; width: 150px;" rowspan=1><strong>MTCR-VC (proposed)<strong></td>
-    </tr>
-    <tr>
-        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/260_123286_000006_000002_6db.wav"></audio></td>
-        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0029_6db.wav"></audio></td>
-        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/260/bdl_arctic_a0029_6db.wav"></audio></td>
-        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/260/bdl_arctic_a0029_6db.wav"></audio></td>
-        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/260/bdl_arctic_a0029_6db.wav"></audio></td>
-        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/260/bdl_arctic_a0029_24k_6db.wav"></audio></td>
-    </tr>
-
-    <tr>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/3570_5694_000005_000004_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0027_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/3570/bdl_arctic_a0027_24k_24k_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/3570/bdl_arctic_a0027_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/3570/bdl_arctic_a0027_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/3570/bdl_arctic_a0027_24k_6db.wav"></audio></td>
-
-    <tr>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/5683_32865_000010_000000_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0024_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/5683/bdl_arctic_a0024_24k_24k_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/5683/bdl_arctic_a0024_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/5683/bdl_arctic_a0024_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/5683/bdl_arctic_a0024_24k_6db.wav"></audio></td>
-
-    <tr>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/4446_2275_000030_000000_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0025_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/4446/clb_arctic_a0025_24k_24k_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/4446/clb_arctic_a0025_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/4446/clb_arctic_a0025_6db.wav"></audio></td>
-      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/4446/clb_arctic_a0025_24k_6db.wav"></audio></td>
-
-          <tr>
-            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/7176_88083_000015_000000_6db.wav"></audio></td>
-            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0023_6db.wav"></audio></td>
-            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/7176/clb_arctic_a0023_24k_24k_6db.wav"></audio></td>
-            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/7176/clb_arctic_a0023_6db.wav"></audio></td>
-            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/7176/clb_arctic_a0023_6db.wav"></audio></td>
-            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/7176/clb_arctic_a0023_24k_6db.wav"></audio></td>
-
-            <tr>
-              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/908_31957_000017_000002_6db.wav"></audio></td>
-              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0020_6db.wav"></audio></td>
-              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/908/clb_arctic_a0020_24k_24k_6db.wav"></audio></td>
-              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/908/clb_arctic_a0020_6db.wav"></audio></td>
-              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/908/clb_arctic_a0020_6db.wav"></audio></td>
-              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/908/clb_arctic_a0020_24k_6db.wav"></audio></td>
-  </tr>
-
-
-  </tbody>
-</table>
 
 
 
-<h2>4. Demos -- Out-of-dataset Speaker<a name="OOD"></a></h2>
+<h2>3. Demos -- Out-of-dataset Speaker<a name="OOD"></a></h2>
 <table>
   <tbody>
     <tr>
@@ -219,248 +152,76 @@ Comparison Systems
 </table>
 
 
-
-
-
-<h3>5. Demos -- Cross-lingual Speaker<a name="CL"></a></h3>
-
-<!-- <h3>4.1. Demos -- Effectiveness of different style level<a name="mutiscale"></a></h2> -->
+<h2>4. Demos -- In-dataset Speaker<a name="ID"></a></h2>
 <table>
   <tbody>
+    <tr>
+        <td style="text-align: center; width: 150px;" rowspan=2><strong>Target Speaker<strong></td>
+      <td style="text-align: center; width: 150px;" rowspan=2><strong>Source Speech<strong></td>
+      <td style="text-align: center; width: 150px;" colspan=5><strong>Method<strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; width: 150px;" rowspan=1><strong>MediumVC<strong></td>
+      <td style="text-align: center; width: 150px;" rowspan=1><strong>SRDVC<strong></td>
+      <td style="text-align: center; width: 150px;" rowspan=1><strong>FragmentVC<strong></td>
+      <td style="text-align: center; width: 150px;" rowspan=1><strong>MTCR-VC (proposed)<strong></td>
+    </tr>
+    <tr>
+        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/260_123286_000006_000002_6db.wav"></audio></td>
+        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0029_6db.wav"></audio></td>
+        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/260/bdl_arctic_a0029_6db.wav"></audio></td>
+        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/260/bdl_arctic_a0029_6db.wav"></audio></td>
+        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/260/bdl_arctic_a0029_6db.wav"></audio></td>
+        <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/260/bdl_arctic_a0029_24k_6db.wav"></audio></td>
+    </tr>
 
     <tr>
-      <td style="text-align: center; width: 150px;"><strong>Target Speaker<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>Source Speech<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>MTCR-VC (proposed)<strong></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/3570_5694_000005_000004_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0027_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/3570/bdl_arctic_a0027_24k_24k_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/3570/bdl_arctic_a0027_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/3570/bdl_arctic_a0027_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/3570/bdl_arctic_a0027_24k_6db.wav"></audio></td>
+
+    <tr>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/5683_32865_000010_000000_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0024_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/5683/bdl_arctic_a0024_24k_24k_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/5683/bdl_arctic_a0024_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/5683/bdl_arctic_a0024_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/5683/bdl_arctic_a0024_24k_6db.wav"></audio></td>
+
+    <tr>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/4446_2275_000030_000000_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0025_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/4446/clb_arctic_a0025_24k_24k_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/4446/clb_arctic_a0025_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/4446/clb_arctic_a0025_6db.wav"></audio></td>
+      <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/4446/clb_arctic_a0025_24k_6db.wav"></audio></td>
+
+          <tr>
+            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/7176_88083_000015_000000_6db.wav"></audio></td>
+            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0023_6db.wav"></audio></td>
+            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/7176/clb_arctic_a0023_24k_24k_6db.wav"></audio></td>
+            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/7176/clb_arctic_a0023_6db.wav"></audio></td>
+            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/7176/clb_arctic_a0023_6db.wav"></audio></td>
+            <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/7176/clb_arctic_a0023_24k_6db.wav"></audio></td>
+
+            <tr>
+              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/908_31957_000017_000002_6db.wav"></audio></td>
+              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0020_6db.wav"></audio></td>
+              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MediumVC/908/clb_arctic_a0020_24k_24k_6db.wav"></audio></td>
+              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/SRDVC/908/clb_arctic_a0020_6db.wav"></audio></td>
+              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/FragmentVC/908/clb_arctic_a0020_6db.wav"></audio></td>
+              <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/908/clb_arctic_a0020_24k_6db.wav"></audio></td>
   </tr>
-  <!-- <tr>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>MediumVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>SRDVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>FragmentVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>MTCR-VC (proposed)<strong></td>
-  </tr> -->
-  <tr>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/SSB1782_SSB17820001_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0013_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/CN-1782/bdl_arctic_a0013_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk//SSB1828_SSB18280001_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0020_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/CN-1828/bdl_arctic_a0020_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/SSB1935_SSB19350001_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0011_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/CN-1935/bdl_arctic_a0011_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/SSB1956_SSB19560012_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0011_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/comparison/MTCR-VC/CN-1956/bdl_arctic_a0011_24k_6db.wav"></audio></td>
-</tr>
 
 
-
-
-
-</tbody>
+  </tbody>
 </table>
 
 
 
-<!-- <li><a href="#more">Demos -- Ablation</a></li> -->
-<!-- <li><a href="#more">Demos -- MTCR Speaker Moudule</a></li> -->
-<!-- 
-<h3>6. Demos -- Ablation<a name="AB"></a></h3>
-
-<!-- <h3>4.1. Demos -- Effectiveness of different style level<a name="mutiscale"></a></h2> -->
-<!-- <table>
-  <tbody>
-
-    <tr>
-      <td style="text-align: center; width: 150px;"><strong>Target Speaker<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>Source Speech<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>w/o MSTR<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>w/o Cycle<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>w/o L_{Spk}<strong></td>
-      <td style="text-align: center; width: 150px;"><strong>w/o L_{Sty}<strong></td>
-        <td style="text-align: center; width: 150px;"><strong>w/o L_{Content}<strong></td>  
-    <td style="text-align: center; width: 150px;"><strong>MTCR-VC (proposed)<strong></td>
-  </tr>
-  <!-- <tr>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>MediumVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>SRDVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>FragmentVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>MTCR-VC (proposed)<strong></td>
-  </tr> -->
-  <!-- <tr>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/3570_5694_000005_000004_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0006_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woMTCR/3570-bdl_arctic_a0016_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woCycle/3570-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woSpk/3570-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woSty/3570-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woContent/3570-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/3570-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/7176_88083_000015_000000_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0020_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woMTCR/7176-clb_arctic_a0020_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woCycle/7176-clb_arctic_a0020_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woSpk/7176-clb_arctic_a0020_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woSty/7176-clb_arctic_a0020_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woContent/7176-clb_arctic_a0020_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/7176-clb_arctic_a0020_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/hifi92_0008_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/p315_022_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woMTCR/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woCycle/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woSpk/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woSty/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woContent/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/hifi92-p315_022_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/rms_arctic_a0001_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/p225_011_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woMTCR/rms-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woCycle/rms-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woSpk/rms-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woSty/rms-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woContent/rms-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/rms-p225_011_24k_6db.wav"></audio></td>
-</tr>
-
-
-</tbody>
-</table> -->
-
-
-<!-- <li><a href="#more">Demos -- Ablation</a></li> -->
-<!-- <li><a href="#more">Demos -- MTCR Speaker Moudule</a></li> -->
-
-<!-- <h3>6. Demos -- MTCR Speaker Moudule<a name="MTCR"></a></h3> -->
-<!-- 
-<blockquote>
-  Speaker Representation
-<!-- <h3>4.1. Demos -- E
-  ffectiveness of different style level<a name="mutiscale"></a></h2> -->
-<!-- <table>
-  <tbody>
-
-    <tr>
-      <td style="text-align: center; width: 150px;"><strong>Target Speaker<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>Source Speech<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>w/o Block1<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>w/o Block2<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>w/o Block3<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>MTCR-VC (proposed)<strong></td>
-  </tr> -->
-  <!-- <tr>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>MediumVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>SRDVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>FragmentVC<strong></td>
-    <td style="text-align: center; width: 150px;" rowspan=1><strong>MTCR-VC (proposed)<strong></td>
-  </tr> -->
-  <!-- <tr>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/260_123286_000006_000002_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0020_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation//woBlock1/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation//woBlock2/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock3/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/4446_2275_000030_000000_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0006_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock1/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock2/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock3/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/hifi92_0008_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/p315_022_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock1/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock2/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock3/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/hifi92-p315_022_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/hifi6097_0001_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/p225_011_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock1/hifi6097-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock2/hifi6097-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/woBlock3/hifi6097-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/hifi6097-p225_011_24k_6db.wav"></audio></td>
-</tr>
-
-
-</tbody>
-</table> -->
-
-<!-- <blockquote>
-  Speaker Retrieval Process -->
-
-<!-- <table>
-  <tbody>
-
-    <tr>
-      <td style="text-align: center; width: 150px;"><strong>Target Speaker<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>Source Speech<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>Block1<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>Block2<strong></td>
-    <td style="text-align: center; width: 150px;"><strong>Block3<strong></td>
-      <td style="text-align: center; width: 150px;"><strong>Temporal<strong></td>
-        <td style="text-align: center; width: 150px;"><strong>Channel<strong></td>  
-    <td style="text-align: center; width: 150px;"><strong>MTCR-VC (proposed)<strong></td>
-  </tr>
-  <tr>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/260_123286_000006_000002_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/clb_arctic_a0020_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock1/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock2/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock3/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rtime/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rchannel/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-    <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/260-clb_arctic_a0020_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/4446_2275_000030_000000_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/bdl_arctic_a0006_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock1/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock2/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock3/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rtime/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rchannel/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/4446-bdl_arctic_a0006_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/hifi92_0008_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/p315_022_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock1/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock2/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock3/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rtime/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rchannel/hifi92-p315_022_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/hifi92-p315_022_24k_6db.wav"></audio></td>
-</tr>
-<tr>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/spk/hifi6097_0001_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/source/p225_011_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock1/hifi6097-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock2/hifi6097-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rBlock3/hifi6097-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rtime/hifi6097-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/rchannel/hifi6097-p225_011_24k_6db.wav"></audio></td>
-  <td style="text-align: center"><audio style="width: 150px;" controls="" preload="none" src="sample/ablation/MTCR/hifi6097-p225_011_24k_6db.wav"></audio></td>
-</tr>
-</tbody>
-</table>  -->
 
       <footer class="site-footer">
         
